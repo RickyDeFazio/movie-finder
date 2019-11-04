@@ -4,4 +4,44 @@
   box-sizing: border-box;
 }
 
+.header {
+  border-bottom: 0.2rem solid red;
+  margin-bottom: 2rem;
+  padding: 2rem 0 2rem;
+  background-color: black;
+}
+.header #searchForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header #searchForm label {
+  font-size: 3rem;
+  color: white;
+}
+.header #searchForm input {
+  margin-top: 1rem;
+  width: 300px;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+.container h5 {
+  text-align: center;
+}
+
+.img-contain {
+  text-align: center;
+}
+.img-contain img {
+  height: 350px;
+  width: 90%;
+}
+
 /*# sourceMappingURL=style.css.map */

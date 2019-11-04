@@ -7,6 +7,49 @@
 
 // Variables ------------------------------ /
 
-
+$primary-color: red;
+$secondary-color: white;
+$primary-background-color: black;
+$secondary-background-color: rgb(34, 33, 33);
 
 // Base ----------------------------------- /
+
+.header {
+  border-bottom: .2rem solid $primary-color;
+  margin-bottom: 2rem;
+  padding: 2rem 0 2rem;
+  background-color: $primary-background-color;
+  #searchForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    label {
+      font-size: 3rem;
+      color: $secondary-color;
+    }
+    input {
+      margin-top: 1rem;
+      width: 300px;
+      height: 2rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  h5 {
+    text-align: center;
+  }
+}
+
+.img-contain {
+  text-align: center;
+  img {
+    height: 350px;
+    width: 90%;
+  }
+}

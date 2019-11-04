@@ -4,11 +4,11 @@ document.getElementById('searchForm')
     let searchText = document.getElementById('searchText').value;
     getMovies(searchText);
     e.preventDefault();
-})
+});
 
 // Retrieve movies from api
 const getMovies = (searchText) => {
-  const movieContainer = document.getElementById('movies');
+  const movieContainer = document.querySelector('.container');
   fetch(`http://www.omdbapi.com/?apikey=52292305&s=${searchText}`)
     .then(response => response.json())
     .then(data => {
@@ -17,7 +17,9 @@ const getMovies = (searchText) => {
       movies.forEach(movie => {
         movieContent += `
           <div class="collection">
-            <img src="${movie.Poster}" title="${movie.Title}" alt="${movie.Title}">
+            <div class="img-contain">
+              <img src="${movie.Poster}" title="${movie.Title}" alt="${movie.Title}">
+            </div>
             <h5>${movie.Title}</h5>
           </div>
           `;
