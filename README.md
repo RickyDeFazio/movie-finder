@@ -3,6 +3,6 @@
 
 Search through movies and get detailed information about them.
 
-## Installing / Getting started
+## To Use
 
 Simply start a live-server on index.html to view! :smile:

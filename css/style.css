@@ -32,12 +32,30 @@
   justify-content: center;
   max-width: 100%;
 }
-.container h5 {
-  text-align: center;
+
+.collection {
+  display: flex;
+  flex-direction: column;
+}
+.collection h5 {
+  align-self: center;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.collection button {
+  align-self: center;
+  width: 4.5rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+.collection button:hover {
+  background-color: red;
 }
 
 .img-contain {
   text-align: center;
+  padding-bottom: 0.5rem;
+  max-width: 300px;
 }
 .img-contain img {
   height: 350px;

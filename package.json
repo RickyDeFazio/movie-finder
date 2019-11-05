@@ -1,0 +1,23 @@
+{
+  "name": "movie-finder",
+  "version": "1.0.0",
+  "description": "> A simplistic alternative to IMDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickyDeFazio/movie-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RickyDeFazio/movie-finder/issues"
+  },
+  "homepage": "https://github.com/RickyDeFazio/movie-finder#readme",
+  "dependencies": {
+    "sass": "^1.23.3"
+  }
+}

@@ -41,13 +41,31 @@ $secondary-background-color: rgb(34, 33, 33);
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
   h5 {
-    text-align: center;
+    align-self: center;
+    padding-bottom: .5rem;
+    font-size: 1rem;
+  }
+  button {
+    align-self: center;
+    width: 4.5rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  button:hover {
+    background-color: $primary-color;
   }
 }
 
 .img-contain {
   text-align: center;
+  padding-bottom: .5rem;
+  max-width: 300px;
   img {
     height: 350px;
     width: 90%;

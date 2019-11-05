@@ -21,6 +21,7 @@ const getMovies = (searchText) => {
               <img src="${movie.Poster}" title="${movie.Title}" alt="${movie.Title}">
             </div>
             <h5>${movie.Title}</h5>
+            <button type="button">Details</button>
           </div>
           `;
         movieContainer.innerHTML = movieContent;
