@@ -69,5 +69,9 @@ $secondary-background-color: rgb(34, 33, 33);
   img {
     height: 350px;
     width: 90%;
+    transition: transform .5s ease-in;
+  }
+  img:hover {
+    transform: scale(1.2);
   }
 }

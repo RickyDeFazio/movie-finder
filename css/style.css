@@ -60,6 +60,10 @@
 .img-contain img {
   height: 350px;
   width: 90%;
+  transition: transform 0.5s ease-in;
+}
+.img-contain img:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
