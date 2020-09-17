@@ -1,3 +1,6 @@
+import config from '../config.js';
+const { API_KEY } = config;
+
 // Search functionality on submit
 document.getElementById('searchForm')
   .addEventListener('submit', (e) => {
@@ -9,7 +12,7 @@ document.getElementById('searchForm')
 // Retrieve movies from api
 const getMovies = (searchText) => {
   const movieContainer = document.querySelector('.container');
-  fetch(`http://www.omdbapi.com/?apikey=52292305&s=${searchText}`)
+  fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${searchText}`)
     .then(response => response.json())
     .then(data => {
       let movies = data.Search;
