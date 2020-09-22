@@ -18,15 +18,17 @@ const getMovies = (searchText) => {
       let movies = data.Search;
       let movieContent = ``;
       movies.forEach(movie => {
-        movieContent += `
+        if (movie.Poster !== 'N/A'){
+          movieContent += `
           <div class="collection">
             <div class="img-contain">
-              <img src="${movie.Poster}" title="${movie.Title}" alt="${movie.Title}">
+              <img src="${movie.Poster}" title="${movie.Title}" alt="${movie.Title}" onerror="this.onerror=null;this.src='https://image.shutterstock.com/image-vector/no-image-available-vector-illustration-260nw-744886198.jpg';" >
             </div>
             <h5>${movie.Title}</h5>
             <button type="button">Details</button>
           </div>
           `;
+        }
         movieContainer.innerHTML = movieContent;
       });
     })
