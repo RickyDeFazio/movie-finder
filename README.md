@@ -1,4 +1,5 @@
 # Movie Finder
+
 > A simplistic alternative to IMDB.
 
 Search through movies and get detailed information about them.
@@ -7,9 +8,9 @@ Search through movies and get detailed information about them.
 
 Simply start a live-server on index.html to view! :smile:
 
-## Development Plans
+## Todo
 
-* Rebuild with React framework
-* Manage state for search results
-* Create a 'details' page for selected movie
-* Improve styling and layout
+- [ ] Rebuild with React framework
+- [ ] Manage state for search results
+- [ ] Create a 'details' page for selected movie
+- [ ] Improve styling and layout
